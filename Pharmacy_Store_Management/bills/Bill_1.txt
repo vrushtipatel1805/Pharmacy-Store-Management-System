@@ -1,0 +1,12 @@
+💊 Pharmacy Store Bill
+Bill No: 20250823-1
+Date: 2025-08-23T12:21:32
+Customer: Walk-in
+------------------------------------------------------
+	Medicine 		Qty 		Unit Price
+ Diclofenac Gel 30g	  20	  50.0
+------------------------------------------------------
+Subtotal: ₹1000.0
+Discount: ₹20.0
+Tax (18%): ₹176.4
+Final Amount: ₹1156.4
