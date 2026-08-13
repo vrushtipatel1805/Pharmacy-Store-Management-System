@@ -1,17 +1,56 @@
-Pharmacy Store Management System is a Java-based application designed to simplify and automate the management of pharmacy operations, including medicine inventory, customers, suppliers, purchases, sales, billing, and stock monitoring. The project integrates Java with MySQL using JDBC to provide efficient database connectivity and reliable management of pharmacy records.
+# Pharmacy Store Management System
 
-The system allows pharmacy staff to add, view, search, and manage medicines with important information such as medicine name, price, available stock, and expiry date. It also provides supplier and customer management features for maintaining organized records. Purchase management enables users to record medicine purchases from suppliers and automatically update the available inventory. Sales management handles medicine sales, checks stock availability, updates inventory after each transaction, and generates a sales receipt containing medicine details, quantity, and total amount.
+Pharmacy Store Management System is a Java-based application designed to manage the daily operations of a pharmacy efficiently. The system provides functionalities for managing medicines, customers, suppliers, purchases, sales, inventory, stock levels, and medicine expiry dates. It uses data structures such as Linked Lists and Min Heaps to efficiently organize and process pharmacy information. The application also generates sales bills and stores transaction details for better record management.
 
-A key feature of this project is the implementation of Data Structures and Algorithms to improve inventory management. A Min Heap is used to identify medicines based on their earliest expiry dates, helping pharmacy staff monitor medicines that are close to expiration. Another Min Heap is implemented to identify medicines with low stock levels, making it easier to maintain sufficient inventory. Linked Lists are used for managing customer, medicine, and supplier records, demonstrating practical applications of fundamental data structures.
+## Technology Stack
 
-The application also supports billing and report generation, allowing transaction details to be stored and receipts to be generated for completed sales. The database is designed to maintain structured information related to medicines, suppliers, customers, purchases, and sales.
+**Frontend:** Java Console / Command-Line Interface (CLI)
 
-Key Features 
+**Backend:** Java, JDBC
 
-Medicine inventory management, medicine search, expiry-date monitoring, low-stock monitoring, customer management, supplier management, purchase management, sales management, automatic stock updates, billing and receipt generation, database integration, and data-structure-based inventory processing.
+**Database:** MySQL
 
-Technologies Used
+**Libraries:** JUnit, OpenPDF
 
-Java, MySQL, JDBC, Data Structures and Algorithms, Linked List, Min Heap, SQL, and OpenPDF.
+**Development Tools:** IntelliJ IDEA
 
-This project demonstrates practical knowledge of Java programming, object-oriented programming, database connectivity, SQL operations, file handling, and data structures while solving a real-world pharmacy inventory and management problem.
+## Key Features
+
+The system allows users to add, view, search, update, and manage medicine records including medicine name, price, available stock, and expiry date. Customer information such as name, phone number, and email can be maintained using a custom Linked List implementation. Supplier management provides functionality to add and view supplier details. The purchase module records medicine purchases from suppliers and updates inventory accordingly. The sales module manages medicine sales, checks available stock, calculates the total amount, updates inventory, and generates a bill receipt.
+
+The project also implements an **Expiry Min Heap** to identify medicines with the earliest expiry dates and a **Low Stock Min Heap** to efficiently identify medicines with low inventory levels. These data structures demonstrate practical application of Data Structures and Algorithms in a real-world pharmacy management scenario.
+
+## Project Structure
+
+```text
+Pharmacy_Store_Management/
+│
+├── src/
+│   ├── PharmacyStore1.java
+│   └── Pharmacy_store_managment/
+│       ├── PharmacyStore.java
+│       ├── PharmacyStore2.java
+│       ├── PharmacyStore3.java
+│       ├── Medicen.java
+│       ├── MedicineManage.java
+│       ├── PurchaseManager.java
+│       ├── SalesManager.java
+│       └── SupplierManager.java
+│
+├── bills/
+│   └── Bill_1.txt
+│
+├── lib/
+│   ├── JUnit
+│   └── OpenPDF
+│
+├── pharmacy_db.pdf
+├── Saels_report.pdf
+└── erdaigram.drawio
+```
+
+## Database
+
+The application connects to a MySQL database named `pharmacy_db` using JDBC. The database stores medicine, supplier, customer, purchase, and sales information.
+
+This project demonstrates practical knowledge of **Java, Object-Oriented Programming, JDBC, MySQL, Data Structures, File Handling, and basic Database Management**, making it a useful real-world implementation of pharmacy inventory and sales management.
